@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recherche dans une liste</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="card">
+        <h1>Recherche de langages</h1>
+        <p>Tapez dans le champ pour filtrer la liste en temps reel.</p>
+
+        <label class="search-label" for="search-input">Rechercher un langage</label>
+        <input
+            id="search-input"
+            class="search-input"
+            type="text"
+            placeholder="Ex : java, python, rust..."
+            autocomplete="off"
+        >
+
+        <ul id="language-list" class="language-list">
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>C</li>
+            <li>C++</li>
+            <li>Ruby</li>
+            <li>Go</li>
+            <li>Rust</li>
+            <li>PHP</li>
+            <li>TypeScript</li>
+        </ul>
+
+        <p id="empty-message" class="empty-message" hidden>Aucun element ne correspond a votre recherche.</p>
+    </main>
+</body>
+</html>

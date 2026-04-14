@@ -1,0 +1,79 @@
+:root {
+  --card: #fffdf8;
+  --text: #1f2937;
+  --accent: #d97706;
+  --accent-soft: #fde6bf;
+  --border: #e5dccf;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.card {
+  width: min(92vw, 520px);
+  padding: 2rem;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: var(--card);
+  box-shadow: 0 18px 40px rgba(84, 54, 20, 0.08);
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 1.9rem;
+}
+
+p {
+  margin-bottom: 1.2rem;
+  line-height: 1.5;
+}
+
+button {
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 999px;
+  background: var(--accent);
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+button:hover {
+  opacity: 0.92;
+  transform: translateY(-1px);
+}
+
+ul {
+  margin: 1.5rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.75rem;
+}
+
+li {
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: white;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+li:hover {
+  transform: translateX(4px);
+}
+
+li.active {
+  background: var(--accent-soft);
+}

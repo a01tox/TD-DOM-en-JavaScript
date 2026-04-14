@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="faq-shell">
+    <section class="faq">
+      <h1>FAQ en accordeon</h1>
+      <p class="intro">
+        Clique sur une question pour afficher ou masquer sa reponse.
+      </p>
+
+      <div class="faq-list">
+        <article class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>Qu'est-ce qu'un accordeon FAQ ?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              C'est un bloc interactif qui montre ou cache une reponse quand on clique sur une question.
+            </p>
+          </div>
+        </article>
+
+        <article class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>Pourquoi n'ouvrir qu'une seule reponse ?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Cela garde l'interface plus lisible et evite d'avoir une longue liste completement ouverte.
+            </p>
+          </div>
+        </article>
+
+        <article class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>Quel est le role du JavaScript ici ?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Il gere le clic sur les questions, ferme l'ancienne reponse ouverte et anime la nouvelle.
+            </p>
+          </div>
+        </article>
+
+        <article class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>Pourquoi utiliser une transition CSS ?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              La transition rend l'ouverture et la fermeture plus fluides et plus agreables a regarder.
+            </p>
+          </div>
+        </article>
+
+        <article class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>Peut-on refermer la reponse active ?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Oui. Un clic sur la question deja ouverte masque sa reponse sans en ouvrir une autre.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

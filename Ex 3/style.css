@@ -1,0 +1,91 @@
+:root {
+    --bg-end: #e6dfd2;
+    --panel: rgba(255, 255, 255, 0.86);
+    --border: rgba(63, 52, 43, 0.12);
+    --text: #2e251f;
+    --muted: #65574d;
+    --accent: #c46a2f;
+    --accent-soft: rgba(196, 106, 47, 0.14);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 24px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text);
+    background:
+        radial-gradient(circle at top left, rgba(196, 106, 47, 0.18), transparent 32%),
+        linear-gradient(135deg, var(--bg-start), var(--bg-end));
+}
+
+.card {
+    width: min(100%, 460px);
+    padding: 28px;
+    border: 1px solid var(--border);
+    border-radius: 22px;
+    background: var(--panel);
+    box-shadow: 0 20px 45px rgba(46, 37, 31, 0.12);
+    backdrop-filter: blur(10px);
+}
+
+h1 {
+    margin: 0 0 10px;
+    font-size: 1.9rem;
+}
+
+p {
+    margin: 0;
+    color: var(--muted);
+}
+
+.search-label {
+    display: inline-block;
+    margin-top: 24px;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.search-input {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1px solid rgba(63, 52, 43, 0.16);
+    border-radius: 14px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.search-input:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 4px var(--accent-soft);
+    background: #fffdfb;
+}
+
+.language-list {
+    margin: 18px 0 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    gap: 10px;
+}
+
+.language-list li {
+    padding: 14px 16px;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.68);
+    border: 1px solid rgba(63, 52, 43, 0.08);
+    font-weight: 600;
+}
+
+.empty-message {
+    margin-top: 16px;
+    font-weight: 600;
+    color: var(--accent);
+}
