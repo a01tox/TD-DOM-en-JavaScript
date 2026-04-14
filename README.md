@@ -12,8 +12,8 @@ Créer une barre de progression (0 % → 100 %) avec deux boutons : +10% et Réi
 
 # Exercice 4 :Délégation d'événements
 Créer dynamiquement une liste de 5 éléments avec un bouton Ajouter.
-- Attacher un seul écouteur d'événement sur le <ul> parent (pas sur chaque <li>).
-- Au clic sur un <li>, changer sa couleur de fond
+- Attacher un seul écouteur d'événement sur le ```<ul>``` parent (pas sur chaque ```<li>```).
+- Au clic sur un ```<li>```, changer sa couleur de fond
 - Les nouveaux éléments ajoutés doivent aussi réagir au clic sans ajouter de nouvel
 écouteur.
 
